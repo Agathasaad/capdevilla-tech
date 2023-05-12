@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- link de login para pagina css -->
+        <link href="css/isabelle.css" rel="stylesheet">
+        <link rel="shortcut icon" href="Imagens/logoo.png" type="image/x-icon">
+        <style>
+/* css corpo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header .menu .ativo,
+header .menu a:hover {
+    color: #f9f9f9;
+    background: linear-gradient(to right, rgb(142, 82, 239), rgb(30, 57, 92));
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 7px;
+    box-shadow: 10px 10px 12px black;
+}
+
+.menu {
+    width: 100%;
+    text-align: right;
+    padding-top: 30px;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+html,body {
+    height: 100%;
+    overflow-x: hidden;
+    background: linear-gradient(to right, rgb(253, 254, 254), rgb(105, 223, 221));
+
+}
+header{
+    position: relative;
+    bottom: 350px;
+}
+
+nav{
+    position: relative;
+    top: 200px;
+}
+        </style>
+        
+    </head>
+  
+<body bgcolor="lightblue">
+    <center>
+        <nav>
+    <br>
+    <table border="1" cellspacing="5" bgcolor="white" 
+           height="100" width="500" cellpadding="5" id="TableScore">
+        <caption><h2><b>ESTUDANTE</b></h2></caption>
+        <tr>
+            <th width="180">NOME</th>
+            <th width="180">TURMA</th>
+            <th width="180">DATA DA ENTREGA</th>
+            <th width="180">ATIVIDADE </th>
+            <th width="180">MATERIA </th>
+        </tr>
+          
+    </table>
+    </nav>
+    </center>
+    
+
+
+    <header>
+        <div class="center">
+            <div class="logo"> <img src="Imagens/Logoo.png" width="200" height="200 "> </div>
+            <div class="menu">
+                <a href="home isabella.html" >Home</a>
+                <a href="notasdabella.html">Notas</a>
+                <a href="atividadesdaBELLA.html">Atividades</a>
+                <a href="boeltins/isabella2.html">Aulas</a>
+                <a href="eventoisabella.html" class="ativo">Eventos</a>
+            </div>
+        </div>
+    
+
+    </header>
+    
+
+
+
+
+
+
+
+
+    <script>
+console.log( "pa" )
+
+function Sub() {
+    var nome, turma, ensino, matricula, materia;
+    nome =(document.getElementById('aname').value);
+    turma =(document.getElementById('aturma').value);
+    ensino =(document.getElementById('aj').value);
+    matricula =(document.getElementById('ad').value);
+    data =(document.getElementById('DATA').value);
+
+    var tabela = `
+    <tr>
+        <th width="180" id="inome">${nome}</th>
+        <th width="180" id="idata">${turma}</th>
+        <th width="180" id="iensino">${ensino}</th>
+        <th width="180" id="imatricula">${matricula}</th>
+        <th width="180" id="idata">${data}</th>
+    </tr>`
+
+    document.getElementById( 'TableScore' ).innerHTML += tabela;
+}
+    </script>
+</body>
+</html>

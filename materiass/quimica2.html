@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  
+<body bgcolor="lightblue">
+    <center>
+    <br>
+    <table border="1" cellspacing="5" bgcolor="white" 
+           height="100" width="500" cellpadding="5" id="TableScore">
+        <caption><h2><b>ESTUDANTE</b></h2></caption>
+        <tr>
+            <th width="180">NOME</th>
+            <th width="180">TURMA</th>
+            <th width="180">DATA DA ENTREGA</th>
+            <th width="180">ATIVIDADE </th>
+            <th width="180">MATERIA </th>
+        </tr>
+          
+    </table>
+    </center>
+
+<style>
+
+    body{
+        background: linear-gradient(to right,  rgb(253, 254, 254), rgb(105, 223, 221));
+    }
+</style>
+
+
+
+
+
+
+    <script>
+console.log( "pa" )
+
+function Sub() {
+    var nome, turma, ensino, matricula, materia;
+    nome =(document.getElementById('aname').value);
+    turma =(document.getElementById('aturma').value);
+    ensino =(document.getElementById('aj').value);
+    matricula =(document.getElementById('ad').value);
+    data =(document.getElementById('DATA').value);
+
+    var tabela = `
+    <tr>
+        <th width="180" id="inome">${nome}</th>
+        <th width="180" id="idata">${turma}</th>
+        <th width="180" id="iensino">${ensino}</th>
+        <th width="180" id="imatricula">${matricula}</th>
+        <th width="180" id="idata">${data}</th>
+    </tr>`
+
+    document.getElementById( 'TableScore' ).innerHTML += tabela;
+}
+    </script>
+</body>
+</html>

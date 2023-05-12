@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/notas.css">
+    <link rel="shortcut icon" href="Imagens/logoo.png" type="image/x-icon">
+    <title>Notas</title>
+</head>
+<body>
+    
+
+
+
+
+  
+  
+<body bgcolor="lightblue">
+    <center>
+    <table border="1" cellspacing="5" bgcolor="white">
+        <caption><H1><b>ATIVIDADE</b></H1></caption>
+        <tr>
+            <th rowspan="2">NOME DO ALUNO</th>
+            <th colspan="4">ESCOLA- LAGUNA SCHOOL</th>
+  
+        </tr>
+        <tr>
+            <th>NUMERO DA CHAMDA</th>
+            <th>TURMA</th>
+            <th>TOTAL DE FALTAS</th>
+            <th>MEDIA FINAL </th>
+        </tr>
+        <tr>
+            <td><input type="text" class="campo" id="aname"></td>
+            <td><input type="text" class="campo" id="aturma"></td>
+            <td><input type="text" class="campo" id="aj"></td>
+            <td><input type="text"  class="campo" id="ad"></td>
+            <td><input type="text" class="campo" id="DATA"></td>
+        </tr>
+        <tr>
+            <th colspan="5" height="30">
+            <input type="submit" value="ENVIAR" onclick="Sub()"></th>
+        </tr>    
+    </table>
+    <br>
+   
+
+
+
+    <script>
+console.log( "pa" )
+
+function Sub() {
+    var nome, turma, ensino, matricula, materia;
+    nome =(document.getElementById('aname').value);
+    turma =(document.getElementById('aturma').value);
+    ensino =(document.getElementById('aj').value);
+    matricula =(document.getElementById('ad').value);
+    data =(document.getElementById('DATA').value);
+
+    var tabela = `
+    <tr>
+        <th width="180" id="inome">${nome}</th>
+        <th width="180" id="idata">${turma}</th>
+        <th width="180" id="iensino">${ensino}</th>
+        <th width="180" id="imatricula">${matricula}</th>
+        <th width="180" id="idata">${data}</th>
+    </tr>`
+    Array.from( document.getElementsByClassName( "campo" ) ).forEach( obj => obj.value="" );    
+    document.getElementById( 'TableScore' ).innerHTML += tabela;
+}
+    </script>
+</body>
+</html>
+   
+</body>
+</html>

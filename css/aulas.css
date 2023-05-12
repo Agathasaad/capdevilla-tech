@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header .menu .ativo,
+header .menu a:hover {
+    color: #f9f9f9;
+    background: linear-gradient(to right, rgb(142, 82, 239), rgb(30, 57, 92));
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 7px;
+    box-shadow: 10px 10px 12px black;
+}
+
+.menu {
+    width: 100%;
+    text-align: right;
+    padding-top: 30px;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+html,body {
+    height: 100%;
+    overflow-x: hidden;
+    background: linear-gradient(to right, rgb(253, 254, 254), rgb(105, 223, 221));
+
+}
+
+/* ----------------------------------------------------------------------------------------- */
+#isso {
+    border: 2px solid;
+    background-color: grey;
+}
+
+#isso2 {
+    color: brown;
+}
+
+#isso3 {
+    color: darkmagenta;
+}
+
+#isso4 {
+    color: black;
+}
+
+#isso5 {
+    color: pink;
+}
+
+#isso17 {
+    background-color: grey;
+    border: 2px solid;
+}
+
+#isso12 {
+    color: darkblue;
+}
+
+#isso28 {
+    color: rgb(235, 59, 59);
+}
+
+#isso6 {
+    color: purple;
+}
+
+#isso8 {
+    color: greenyellow;
+}
+
+#isso32 {
+    color: darkorchid;
+}
+
+#isso23 {
+    color: darkcyan;
+}
+
+#isso9 {
+    color: blue;
+}
+
+.aulass {
+    text-align: center;
+    position: relative;
+    top: 100px;
+    background-color: white;
+    border: 2px solid;
+}
+
+
+#A {
+    display: flex-end;
+}
